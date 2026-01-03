@@ -1,0 +1,50 @@
+/* Auth-specific overrides for login & registration */
+
+.signup-photo {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem 0 1.1rem;
+}
+
+.signup-photo-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  border: 2px dashed rgba(148, 163, 184, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.signup-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.signup-textarea {
+  resize: vertical;
+}
+
+.signup-photo-label {
+  display: inline-block;
+  position: relative;
+}
+
+.signup-photo-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.signup-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+}
